@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Flight Surety</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+        <div id="display-wrapper-operational" class="top-20"></div>
+    </main>
+
+    <main class="container">
+        <h2>Airline Registration</h2>
+
+        <div class="row top-20">
+            <label class="form">Register Airlines</label>
+            <input type="text" id="airline-name" placeholder="Airline Name">
+            <input type="text" id="airline-address" style="width: 400px;" placeholder="Airline Address">
+            <btn class="btn btn-primary" id="submit-airline">Register</btn>
+        </div>
+
+        <div id="display-wrapper" class="top-20" />
+				<hr />
+        </div>
+        <div class="row top-20">
+            <label class="form">Airline Actions</label>
+            <input type="text" id="airline-fund-address" style="width: 400px;" placeholder="Airline Address">
+            <btn class="btn btn-primary" id="fund-airlines">Fund</btn>
+            <btn class="btn btn-primary" id="vote-airlines" style="margin-left: 10px;">Vote</btn>
+            <btn class="btn btn-primary" id="is-registered" style="margin-left: 10px;">Is Registered</btn>
+            <btn class="btn btn-primary" id="is-funded" style="margin-left: 10px;">Is Funded</btn>
+            <btn class="btn btn-primary" id="is-approved" style="margin-left: 10px;">Is Approved</btn>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h5>Results:</h5>
+            <div id="display-wrapper-register">
+
+            </div>
+        </div>
+    </main>
+
+    <main class="container" class="top-20">
+        <h2>Insure Flight</h2>
+
+        <div class="row top-20">
+            <input type="text" id="flight-name" placeholder="Flight Name" style="width: 400px;">
+        </div>
+
+        <div class="row top-20">
+            <input type="text" id="insurence-airline-address" placeholder="Airline Address" style="width: 400px;">
+        </div>
+
+        <div class="row top-20">
+            <input type="text" id="flight-timestamp" placeholder="Timestamp (20210827)" style="width: 400px;">
+        </div>
+
+        <div class="row top-20">
+            <input type="text" id="insurence-amount" placeholder="1 or less ETH" style="width: 400px;">
+        </div>
+        <div class="row top-20">
+            <btn class="btn btn-primary" id="submit-buy">Buy</btn>
+            <btn class="btn btn-primary" id="submit-oracle" style="margin-left: 10px;">Fetch Flight Status</btn>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h5>Results:</h5>
+            <div id="display-wrapper-buy">
+
+            </div>
+        </div>
+    </main>
+
+    <main class="container" class="top-20">
+        <h2>Passenger Detail</h2>
+
+        <div class="row top-20">
+            <label class="form">Check Balance</label>
+            <input type="text" id="passanger-address" placeholder="Passenger Address" style="width: 400px;">
+            <btn class="btn btn-primary" id="check-balance">Check Credit Pending to Withdraw</btn>
+            <btn class="btn btn-primary" id="withdraw-balance" style="margin-left: 10px;">Withdraw</btn>
+        </div>
+
+        <div style="margin-top: 40px;">
+            <h5>Results:</h5>
+            <div id="display-wrapper-passenger-detail">
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
